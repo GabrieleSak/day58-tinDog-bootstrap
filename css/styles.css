@@ -8,7 +8,7 @@ body {
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 h1 {
@@ -69,12 +69,20 @@ p {
 .title-image {
     transform: rotate(25deg);
     width: 60%;
+    position: absolute;
+    right: 30%
+}
+
+.img-container {
+    position: relative;
 }
 
 /*Features*/
 
 #features {
     padding 7% 15%;
+    background-color: #fff;
+    position: relative;
 }
 
 .feature-box{
@@ -136,3 +144,40 @@ p {
 
 
 
+/*Call to Action*/
+
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 7% 15%;
+    color: #fff;
+}
+
+.cta-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/*Footer*/
+
+#footer {
+    text-align: center;
+    padding: 7% 15%;
+    background-color: #fff;
+}
+
+.footer-icon {
+    margin: 20px 10px;
+}
+
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
